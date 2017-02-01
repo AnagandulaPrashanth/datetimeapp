@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Datetimes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Lastname</th>
+      <th>Startdate</th>
+      <th>Enddate</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @datetimes.each do |datetime| %>
+      <tr>
+        <td><%= datetime.name %></td>
+        <td><%= datetime.lastname %></td>
+        <td><%= datetime.startdate %></td>
+        <td><%= datetime.enddate %></td>
+        <td><%= link_to 'Show', datetime %></td>
+        <td><%= link_to 'Edit', edit_datetime_path(datetime) %></td>
+        <td><%= link_to 'Destroy', datetime, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Datetime', new_datetime_path %>

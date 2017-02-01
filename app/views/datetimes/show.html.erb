@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @datetime.name %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @datetime.lastname %>
+</p>
+
+<p>
+  <strong>Startdate:</strong>
+  <%= @datetime.startdate %>
+</p>
+
+<p>
+  <strong>Enddate:</strong>
+  <%= @datetime.enddate %>
+</p>
+
+<%= link_to 'Edit', edit_datetime_path(@datetime) %> |
+<%= link_to 'Back', datetimes_path %>
