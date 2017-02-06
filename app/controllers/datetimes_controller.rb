@@ -6,6 +6,7 @@ class DatetimesController < ApplicationController
   def index
     @datetimes = Datetime.all
   end
+  
 
   # GET /datetimes/1
   # GET /datetimes/1.json
@@ -71,4 +72,6 @@ class DatetimesController < ApplicationController
     def datetime_params
       params.require(:datetime).permit(:name, :lastname, :startdate, :enddate)
     end
+  def seetha
+  end
 end
