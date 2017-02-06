@@ -72,6 +72,4 @@ class DatetimesController < ApplicationController
     def datetime_params
       params.require(:datetime).permit(:name, :lastname, :startdate, :enddate)
     end
-  def seetha
-  end
 end
